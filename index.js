@@ -24,7 +24,7 @@ console.log(isSum50);
 // Since % 2 is 0 if even and 1 if odd, we can use
 // arithmetic to count the total number of odd numbers.
 const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
-console(isTwoOdd);
+console.log(isTwoOdd);
 //Answer is False
 
 // Check three: no number larger than 25
@@ -39,9 +39,8 @@ console.log(isOver25);
 // This is long, and there are more efficient
 // ways of handling it with other data structures
 // that we will review later.
-const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4;
-//Unsure of how to solve this, wil review later
-let isUnique = (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+const isUnique = newSet([n1, n2, n3, n4]).size === 4;
+console.log(`Using Set: ${isUniqueSet}`);
 
 // Define the numbers
 const n1 = 10;
@@ -51,12 +50,14 @@ const n4 = 5;
 
 // Put the numbers in an array
 const numbers = [n1, n2, n3, n4];
+console.log(n1, n2, n3, n4)
 
 // Check for uniqueness using a Set
-const isUnique = new Set(numbers).size === numbers.length;
+//const isUnique = new Set(numbers).size === numbers.length;
+//console.log (isUnique)
 
 // Output the result
-console.log(isUnique); // Outputs true or false
+//console.log(isUnique); // Outputs true or false
 //need to review
 
 

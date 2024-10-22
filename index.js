@@ -67,6 +67,9 @@ console.log(isUnique); // Outputs true or false
 // the ! operator. We could also have tested for 
 // "isUnder25" as an alternative.
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
+console.log(isValid);
+console.log(isSum50);
+
 
 // Finally, log the results.
 console.log(isValid);

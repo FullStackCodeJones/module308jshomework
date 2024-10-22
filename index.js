@@ -40,6 +40,27 @@ console.log(isOver25);
 // ways of handling it with other data structures
 // that we will review later.
 const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4;
+//Unsure of how to solve this, wil review later
+let isUnique = (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+
+// Define the numbers
+const n1 = 10;
+const n2 = 15;
+const n3 = 20;
+const n4 = 5;
+
+// Put the numbers in an array
+const numbers = [n1, n2, n3, n4];
+
+// Check for uniqueness using a Set
+const isUnique = new Set(numbers).size === numbers.length;
+
+// Output the result
+console.log(isUnique); // Outputs true or false
+//need to review
+
+
+
 
 // Here, we put the results into a single variable 
 // for convenience. Note how we negate isOver25 using
